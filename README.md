@@ -1,6 +1,7 @@
 # Lab 02 – HTML/CSS Magazine Design
 
-![Magazine Cover Preview](https://raw.githubusercontent.com/hhassan1230/lab-01-html-magazine-cover-start/master/images/cover-photo-background.jpg)
+![Magazine Cover Preview](image.png)
+![Magazine Cover Preview 2](image-1.png)
 
 ---
 
