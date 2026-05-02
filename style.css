@@ -34,66 +34,171 @@ img {
 
 /* ---- YOUR STYLES BELOW ---- */
 
-body {}
+body {
+  margin: 0;
+  background: #444;
+}
 
-.container {}
+.container {
+  width: 800px;
+  margin: 2% auto;
+}
 
 /*////////// COVER //////////*/
 
-#magazine-cover {}
+#magazine-cover {
+  background: url(https://raw.githubusercontent.com/hhassan1230/lab-01-html-magazine-cover-start/master/images/cover-photo-background.jpg)
+    no-repeat center;
+  background-size: cover;
+  height: 1023px;
+  border: 1px solid black;
+  box-shadow: 0 2px 4px black;
+  position: relative;
+  margin-bottom: 0;
+}
 
 /* Hint: use position: absolute on all headings/paragraphs inside the cover
    so you can place them exactly where you want using top, left, right values */
 #magazine-cover h1,
 #magazine-cover h2,
 #magazine-cover h3,
-#magazine-cover p {}
+#magazine-cover p {
+  position: absolute;
+  line-height: 0;
+  margin: 0;
+  z-index: 10;
+}
 
 /* Style both h1 elements — font, size, color, and a skew transform */
-h1 {}
+h1 {
+  font-family: Serpentine;
+  font-size: 7.5em;
+
+  transform: skewX(-10deg);
+}
 
 /* h2 and h3 share the OsakaMono font */
-h2, h3, p {}
+h2, h3, p {
+  font-family: OsakaMono;
+}
 
 /* First h1: "Mass" — position it near the top-left of the cover */
-#magazine-cover h1:nth-child(1) {}
+#magazine-cover h1:nth-child(1) {
+  top: 72px;
+  left: 45px;
+}
 
 /* Second h1: "appeal" — position it just below the first */
-#magazine-cover h1:nth-child(2) {}
+#magazine-cover h1:nth-child(2) {
+  top: 134px;
+  left: 64px;
+}
 
 /* All h2 headings — uppercase, font size */
-h2 {}
+h2 {
+  text-transform: uppercase;
+  font-size: 2em;
+
+  transform: scaleX(0.92);
+}
 
 /* Cover h2: "KENDRICK LAMAR" — position on the right side of the cover */
-#magazine-cover h2 {}
+#magazine-cover h2 {
+  color: white;
+  top: 219px;
+  left: 493px;
+}
 
 /* Decorative black background bar behind the cover h2 using a ::before pseudo-element */
-#magazine-cover h2::before {}
+#magazine-cover h2::before {
+  content: " ";
+  display: block;
+  width: 330px;
+  height: 42px;
+  position: absolute;
+  background: black;
+  z-index: -1;
+  top: -21px;
+  left: -10px;
+}
 
 /* All h3 headings — uppercase, lighter font weight */
-h3 {}
+h3 {
+  text-transform: uppercase;
+  font-weight: lighter;
+  font-size: 1.35em;
+}
 
 /* Cover h3 #1: "THE PEN IS MIGHTIER" — positioned below the h2 */
-#magazine-cover h3:nth-child(4) {}
+#magazine-cover h3:nth-child(4) {
+  color: white;
+  top: 251px;
+  left: 562px;
+}
 
 /* Decorative bar behind h3 #1 */
-#magazine-cover h3:nth-child(4)::before {}
+#magazine-cover h3:nth-child(4)::before {
+  content: " ";
+  display: block;
+  width: 247px;
+  height: 42px;
+  position: absolute;
+  background: black;
+  z-index: -1;
+  top: -21px;
+  left: -10px;
+}
 
 /* Cover h3 #2: "THAN THE SWORD" — positioned below h3 #1 */
-#magazine-cover h3:nth-child(5) {}
+#magazine-cover h3:nth-child(5) {
+  color: white;
+  top: 282px;
+  left: 595px;
+}
 
 /* Decorative bar behind h3 #2 */
-#magazine-cover h3:nth-child(5)::before {}
+#magazine-cover h3:nth-child(5)::before {
+  content: " ";
+  display: block;
+  width: 215px;
+  height: 42px;
+  position: absolute;
+  background: black;
+  z-index: -1;
+  top: -21px;
+  left: -10px;
+}
 
 /* Cover paragraph (contributor names) — positioned at the bottom-right of the cover */
-#magazine-cover p {}
+#magazine-cover p {
+  line-height: 1.4;
+  top: 819px;
+  right: 37px;
+  color: white;
+  text-align: right;
+}
 
 /*////////// ARTICLE //////////*/
 
-#magazine-article {}
+#magazine-article {
+  background: white;
+  padding: 80px;
+}
 
-#magazine-article h2 {}
+#magazine-article h2 {
+  text-align: center;
+  color: black;
+  margin: 10px;
+}
 
-#magazine-article h3 {}
+#magazine-article h3 {
+  text-align: center;
+  color: black;
+  font-size: 1em;
+  margin: 20px;
+}
 
-#magazine-article p {}
+#magazine-article p {
+  font: normal 1em/1.5em Times, serif;
+  margin-bottom: 20px;
+}
